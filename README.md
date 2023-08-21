@@ -8,19 +8,17 @@ One of the primary challenges many Decentralized Autonomous Organizations (DAOs)
 
 Integrating DAO Proposal Alerts with MetaMask
 
-A practical solution to this challenge is to integrate DAO proposal alerts into users' MetaMask wallets. Here's a suggested method using Snapshot:
+A practical solution to this challenge is to integrate DAO proposal alerts into users' MetaMask wallets. This ensures that members are instantly notified of any new proposals from their MetaMask wallet. This method is simple, efficient, and streamlines the voting process, making it more likely for members to participate actively.
 
-Select a Space: For the purpose of this guide, we'll use the 'onaboatatsea.eth' space as an example. However, Snapshot offers numerous spaces, and the same process can be replicated for any other space within the platform.
+For the purpose of this guide, we'll use the 'onaboatatsea.eth' space as an example. However, Snapshot offers numerous spaces, and the same process can be replicated for any other space within the platform.
 
-Obtain Proposal Alerts: Once you're within your chosen space, you'll have the option to set up proposal alerts. Activating these alerts will ensure you're instantly notified of any new proposals introduced within the space.
+Integrate these alerts directly into your MetaMask wallet (snaps). By doing so, every time a new proposal is up for voting, you'll receive a notification directly in your MetaMask wallet, streamlining the voting process.
 
-Add to MetaMask: Integrate these alerts directly into your MetaMask wallet (snaps). By doing so, every time a new proposal is up for voting, you'll receive a notification directly in your MetaMask wallet, streamlining the voting process.
-
-Vote Directly from MetaMask: Once alerted, users can click on the notification with all the details, including a link to the respective proposal on Snapshot. This simplifies the voting process, making it more likely for members to participate actively.
+ Once alerted, users can click on the notification with all the details, including a link to the respective proposal on Snapshot. This simplifies the voting process, making it more likely for members to participate actively.
 
 Conclusion
 
-By integrating DAO proposal alerts from Snapshot into MetaMask snaps, members are given a seamless experience that keeps them informed and encourages active participation. As demonstrated with 'onaboatatsea.eth', this method is versatile and can be extended to any space within Snapshot, making it an invaluable tool for all DAOs aiming to foster a thriving, participative community.
+By integrating DAO proposal alerts into MetaMask snaps, members are given a seamless experience that keeps them informed and encourages active participation. As demonstrated with 'onaboatatsea.eth', this method is versatile and can be extended to any space within Snapshot, making it an invaluable tool for all DAOs aiming to foster a thriving, participative community.
 
 ## Getting Started
 

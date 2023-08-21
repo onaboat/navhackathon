@@ -137,7 +137,7 @@ const Index = () => {
       </Heading>
 
       <br />
-      <img src="/toolboxman.png" alt="DAO toolbox man" />
+      <img src="toolboxman.png" alt="DAO toolbox man" />
       <CardContainer>
         {state.error && (
           <ErrorMessage>
