@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "description": "Reviece updates about happenings with a DAO",
+  "proposedName": "DAO toolkit for MetaMask",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MetaMask/template-snap-monorepo.git"
+  },
+  "source": {
+    "shasum": "iXryM4XkSZCIoJZmQnFdh6LYVVG2YqTQnF9fFuQhuFU=",
+    "location": {
+      "npm": {
+        "filePath": "dist/bundle.js",
+        "iconPath": "images/icon.svg",
+        "packageName": "snap",
+        "registry": "https://registry.npmjs.org/"
+      }
+    }
+  },
+  "initialPermissions": {
+    "endowment:cronjob": {
+      "jobs": [
+        {
+          "expression": "* * * * *",
+          "request": {
+            "method": "checkForNewData"
+          }
+        }
+      ]
+    },
+    "snap_dialog": {},
+    "endowment:rpc": {
+      "dapps": true,
+      "snaps": false
+    },
+    "endowment:network-access": {}
+  },
+  "manifestVersion": "0.1"
+}
