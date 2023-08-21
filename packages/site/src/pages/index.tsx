@@ -99,6 +99,7 @@ const ErrorMessage = styled.div`
   }
 `;
 
+
 const Index = () => {
   const [state, dispatch] = useContext(MetaMaskContext);
   const handleConnectClick = async () => {
@@ -116,23 +117,31 @@ const Index = () => {
     }
   };
 
-  const handleSendHelloClick = async () => {
-    try {
-      await sendHello();
-    } catch (e) {
-      console.error(e);
-      dispatch({ type: MetamaskActions.SetError, payload: e });
-    }
-  };
 
   return (
     <Container>
-      <Heading>
-        Welcome to <Span>DAO Proposal Snap</Span>
-      </Heading>
-      <Subtitle>
-        Get propsals and vote on them with your MetaMask wallet.
+        <Subtitle>
+      Stay in the loop with daoSNAP: your alert system for every new DAO proposal!
       </Subtitle>
+      <Heading>
+        <Span>Select your DAO</Span>
+      </Heading>
+
+      <select name="cars" id="cars">
+        <option value="volvo">On A Boat at Sea DAO</option>
+        <option value="saab">More comming soon</option>
+      </select>
+
+      <br/>
+      <Heading>
+      <ConnectButton
+                  onClick={handleConnectClick}
+                  disabled={!state.isFlask}
+                />
+      </Heading>
+
+      <br/>
+      <img src="/toolboxman.png" alt="DAO toolbox man" />
       <CardContainer>
         {state.error && (
           <ErrorMessage>
@@ -150,7 +159,11 @@ const Index = () => {
             fullWidth
           />
         )} */}
-        {!state.installedSnap && (
+
+
+      
+
+        {/* {!state.installedSnap && (
           <Card
             content={{
               title: 'Connect',
@@ -181,7 +194,7 @@ const Index = () => {
             }}
             disabled={!state.installedSnap}
           />
-        )}
+        )} */}
         {/* <Card
           content={{
             title: 'Send Hello message',

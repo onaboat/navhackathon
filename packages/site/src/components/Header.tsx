@@ -37,6 +37,11 @@ const RightContainer = styled.div`
   align-items: center;
 `;
 
+const Span = styled.span`
+  color: ${(props) => props.theme.colors.primary.default};
+  font-style: italic;
+`;
+
 export const Header = ({
   handleToggleClick,
 }: {
@@ -63,7 +68,7 @@ export const Header = ({
     <HeaderWrapper>
       <LogoWrapper>
         <SnapLogo color={theme.colors.icon.default} size={36} />
-        <Title>DAO Proposal Snap</Title>
+        <Title>Get <Span>your</Span> DAO proposals in <Span>your</Span> MetaMask wallet.</Title>
       </LogoWrapper>
       <RightContainer>
         <Toggle
