@@ -30,7 +30,6 @@ export const dataProposal = async (previousData: any[] = []): Promise<{ data: an
 
   let hasDataChanged;
   if (previousData.length === 0) {
-    // This is the first load
     hasDataChanged = true;
   } else if (newData.length > 0 && previousData.length > 0 && newData[0].id !== previousData[0].id) {
     // The id of the first item has changed
