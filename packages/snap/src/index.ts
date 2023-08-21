@@ -14,7 +14,7 @@ export const onCronjob: OnCronjobHandler = async ({ request }) => {
       console.log(JSON.stringify(previousData));
       
       // Fetch the hasDataChanged flag from the server
-      const response = await fetch('http://localhost:3000/data-changed');
+      const response = await fetch('https://small-cottony-guppy.glitch.me/data-changed');
       const hasDataChanged = await response.json();
 
       if (hasDataChanged) {

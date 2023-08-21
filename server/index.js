@@ -1,6 +1,6 @@
 const express = require('express');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const dataProposal = require('./dataProposal');  // Update with the correct path
+const dataProposal = require('./dataProposal');  
 
 const app = express();
 const port = 3000;
@@ -84,6 +84,11 @@ async function run() {
   }
 })();
 
+// print in line helloworld  html  to the browser
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
 
 app.get('/data-changed', async (req, res) => {
   // Connect the client to the server
@@ -101,3 +106,5 @@ app.get('/data-changed', async (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+

@@ -131,7 +131,7 @@ const Index = () => {
         Welcome to <Span>DAO Proposal Snap</Span>
       </Heading>
       <Subtitle>
-        Get started by editing <code>src/index.ts</code>
+        Get propsals and vote on them with your MetaMask wallet.
       </Subtitle>
       <CardContainer>
         {state.error && (
@@ -139,7 +139,7 @@ const Index = () => {
             <b>An error happened:</b> {state.error.message}
           </ErrorMessage>
         )}
-        {!state.isFlask && (
+        {/* {!state.isFlask && (
           <Card
             content={{
               title: 'Install',
@@ -149,7 +149,7 @@ const Index = () => {
             }}
             fullWidth
           />
-        )}
+        )} */}
         {!state.installedSnap && (
           <Card
             content={{
@@ -182,7 +182,7 @@ const Index = () => {
             disabled={!state.installedSnap}
           />
         )}
-        <Card
+        {/* <Card
           content={{
             title: 'Send Hello message',
             description:
@@ -208,7 +208,7 @@ const Index = () => {
             the bundle must be hosted at the location specified by the location
             field.
           </p>
-        </Notice>
+        </Notice> */}
       </CardContainer>
     </Container>
   );
